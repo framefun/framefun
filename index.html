@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Framefun | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+    <style media="screen">
+    .navbar {
+    font-size: 1vw;
+    }
+
+    .main-nav {
+    list-style-type: none;
+    /*display: none;*/
+    }
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+      }
+
+
+
+      .nav-links,
+      .logo {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 1);
+      }
+
+      .main-nav li {
+      text-align: center;
+      margin: 15px auto;
+      }
+
+      .logo {
+      display: inline-block;
+      font-size: 22px;
+      margin-top: 10px;
+      margin-right: 1vw;
+      z-index: 1;
+      }
+      .logo img{
+        width: 3vw;
+      }
+
+      @media screen and (min-width: 768px) {
+      .navbar {
+        padding: 80px 50px;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        margin: auto;
+        align-items: center;
+      }
+      .main-nav {
+        display: flex;
+        margin-left: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      .main-nav li {
+        margin: 0;
+      }
+
+      .nav-links {
+        margin-right: 40px;
+      }
+
+      .logo {
+        margin-top: 0;
+      }
+    }
+    .welcome{
+      background-image: url('assets/images/homebg.svg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      padding: 80px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 53vw;
+        z-index: -1;
+    }
+
+    .middleelements{
+      width: 100%;
+      position: relative;
+      margin-top: 5%;
+      max-width: 1920px;
+      z-index: 1;
+    }
+    .vtext {
+      color: white;
+      width:1vw;
+      text-align: left;
+      font-weight: 300;
+    }
+    .vtext span{
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+    display: inline-block;
+    margin-left: -5px;
+    font-size: 1vw;
+    }
+    .brand {
+      color: #F270A8;
+      text-align: center;
+    }
+    .brand span{
+      font-weight: 900;
+      font-size: 15vw;
+    }
+    .social {
+      text-align: right;
+      width:1vw;
+    }
+    a {
+      text-decoration: none;
+    }
+    .social span{
+      width: 30px;
+      display: inline-block;
+      text-align: center;
+    }
+    .social a{
+      display: inline-block;
+      margin: 1vw 0;
+      transition: 0.25s;
+      position: relative;
+      z-index: 1;
+    }
+    .social a:hover{
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+    .bottomelements{
+      margin-top: -100px;
+      position: relative;
+      width: 100%;
+      max-width: 1920px;
+      z-index: 1;
+    }
+    .learnements{
+        display: flex;
+         align-items: flex-end;
+    }
+    .learngraphics{
+      width: 5px;
+      text-align: center;
+    }
+    .learngraphic1{
+      margin-left: 3px;
+      width: 3px;
+      height: 12vw;
+      display: inline-block;
+      background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    }
+    .learngraphic2{
+      display: block;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: white;
+      margin: -5px 0 15px 0;
+    }
+    .learntext{
+      font-weight: 300;
+      font-size: 1vw;
+      color: white;
+      margin: 10px;
+    }
+    .maintext{
+    }
+    .largetext{
+      color: white;
+      font-size: 2vw;
+      font-weight: 900;
+    }
+    .mediumtext{
+      color: black;
+      opacity: 50%;
+      margin: 10px 0 0 0;
+      display: inline-block;
+      font-size: 1vw;
+    }
+    .firstbuttons{
+      margin: 5vw 0 0 0;
+      padding-bottom: 20px;
+    }
+    .firstbuttons button{
+      font-size: 0.8vw;
+      width: 11vw;
+      padding: 10px;
+      cursor: pointer;
+      color: var(--color);
+      transition: 0.25s;
+    }
+    #giftbtn{
+      background: none;
+      color: white;
+      border: 1px solid white;
+      --hover: white;
+    }
+    #giftbtn:hover, #giftbtn:focus{
+      opacity: 0.8;
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+    }
+    #requestbtn:hover, #requestbtn:focus {
+     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+     transform: translateY(-0.25em);
+     opacity: 0.8;
+    }
+    #requestbtn{
+      margin-left: 10px;
+      background: white;
+      color: #EC2B8B;
+      border: 1px solid white;
+      --hover: white;
+    }
+    .leftelements{
+      width: 45%;
+    }
+    .frame{
+      width: 35%;
+    }
+    .frame img{
+      position: absolute;
+      bottom: 0px;
+    /*  min-width: 450px;*/
+      width: 25vw;
+      -webkit-filter: drop-shadow(45px 45px 25px rgba(0,0,0,0.7));
+  filter: drop-shadow(45px 45px 25px rgba(0,0,0,0.7));
+    }
+    .translogo{
+      width: 20%;
+    }
+    .translogo img{
+      width: 20vw;
+      position: absolute;
+      bottom: -50px;
+      right: -100px;
+    }
+    .randos{
+      position: relative;
+      height: 0;
+      top: 0;
+      opacity: 0.5;
+    }
+    .toprando{
+      position: absolute;
+      top: -100px;
+      z-index: 0;
+      right: 1%;
+    }
+    .bottomrando{
+      top: 100px;
+      position: relative;
+      z-index: 0;
+      max-width:11vw;
+    }
+    .toprando img{
+      width: 8vw;
+    }
+    .bottomrando img{
+      width: 11vw;
+
+    }
+
+    .socialicon1, .socialicon2{
+      width: 1.3vw;
+    }
+    .socialicon3{
+      width: 1vw;
+    }
+    @media only screen and (max-width: 600px) {
+      .main-nav{
+        background: red;
+      }
+    body {
+      background-color: lightblue;
+    }
+  }
+    </style>
+    <body>
+    <nav class="navbar">
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#" class="nav-links">HOME</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">ABOUT</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">SERVICES</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">GIFT SHOP</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">CONTACT</a>
+        </li>
+      </ul>
+      <a href="#" class="logo">
+        <img src="assets/images/pblogo.svg" alt="" height="">
+      </a>
+    </nav>
+    <div class="randos">
+      <div class="toprando">
+        <img src="assets/images/circles.svg" alt="">
+      </div>
+      <div class="bottomrando">
+          <img src="assets/images/morecircles.svg" alt="">
+      </div>
+    </div>
+    <section class="welcome">
+      <table class="middleelements">
+        <tr>
+          <td class="vtext">
+            <span >SIGNAGE & BRANDING</span>
+          </td>
+          <td class="brand">
+            <span>FRAMEFUN</span>
+          </td>
+          <td class="social">
+            <span>
+              <a href="https://twitter.com/framefunm" target="_blank"> <img src="assets/images/twitter.svg" alt="" class="socialicon1" > </a><br>
+              <a href="https://za.linkedin.com/company/framefun-digital-printing-signage?trk=public_profile_topcard-current-company" target="_blank"><img src="assets/images/linkedin.svg" alt="" class="socialicon2" ></a><br>
+              <a href="https://www.facebook.com/framefunDigitalMarketing/" target="_blank"><img src="assets/images/fb.svg" alt="" class="socialicon3" ></a>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <table class="bottomelements">
+        <tr>
+          <td class="leftelements">
+
+            <div class="learnements">
+              <div class="learngraphics">
+                <span class="learngraphic1"></span> <br>
+                <span class="learngraphic2"></span>
+              </div>
+              <div class="learntext">
+                <span>LEARN MORE</span>
+              </div>
+            </div>
+
+            <div class="maintext">
+              <span class="largetext">
+                WE MAKE YOUR BRAND <br> ROAR OUT LOUD!
+              </span><br>
+              <span class="mediumtext">LET'S GET YOU THERE</span>
+            </div>
+            <form class="firstbuttons" method="post">
+              <button id="giftbtn" type="button" name="giftbtn">GIFT SHOP</button>
+              <button id="requestbtn" type="button" name="requestbtn">REQUEST A SERVICE</button>
+            </form>
+
+
+          </td>
+          <td class="frame">
+            <img src="assets/images/frame.png" alt="frame">
+          </td>
+          <td class="translogo">
+            <img src="assets/images/translogo.svg" alt="logo" >
+          </td>
+        </tr>
+      </table>
+
+    </section>
+    <section style="position: relative; top: 1020px">
+
+    </section>
+  </body>
+
+  <script type="text/javascript">
+  </script>
+</html>
