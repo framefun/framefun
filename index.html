@@ -80,6 +80,10 @@
       .logo {
         margin-top: 0;
       }
+
+      .mobile-nav{
+        display: none;
+      }
     }
     .welcome{
       background-image: url('assets/images/homebg.svg');
@@ -288,17 +292,27 @@
     .socialicon3{
       width: 1vw;
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 768px) {
       .main-nav{
-        background: blue;
+        display: none;
       }
-    body {
-      background-color: lightblue;
-    }
+      .mobile-nav{
+        width: 50px;
+      }
+      .mobile-nav span{
+        width: 40px;
+        height: 5px;
+        display: inline;
+        background: white;
+      }
   }
     </style>
     <body>
     <nav class="navbar">
+      <div class="mobile-nav">
+        <span></span>
+        <span></span>
+      </div>
       <ul class="main-nav" id="js-menu">
         <li>
           <a href="#" class="nav-links">HOME</a>
