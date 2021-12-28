@@ -1,42 +1,57 @@
+<ul>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
 <style media="screen">
+  body,html {
+  margin: 0;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: #000;
+}
+ul {
+  margin: 150px auto 0;
+  padding: 0;
+  list-style: none;
+  width: 600px;
+  text-align: center;
+  display: flex;
+}
+li {
+  position: relative;
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
 
 </style>
-<header>
-    <nav>
-        <div id="brand">
-            <div id="logo"></div>
-            <div id="word-mark"></div>
-        </div>
-        <div id="menu">
-            <div id="menu-toggle">
-                <div id="menu-icon">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <ul>
-                <li><a href="#section00"></a></li>
-                <li><a href="#section01"></a></li>
-                <li><a href="#section02"></a></li>
-                <li><a href="#section03"></a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="hero-section">
-        <div id="head-line"></div>
-    </div>
-</header>
-
-<section id="section00">
-    <div id="heading"></div>
-</section>
-<section id="section01">
-    <div id="heading"></div>
-</section>
-<section id="section02">
-    <div id="heading"></div>
-</section>
-<section id="section03">
-    <div id="heading"></div>
-</section><a href="https://youtu.be/m1IU7zjl1k4" id="youtube"><i class="fa fa-youtube-play"></i></a>
