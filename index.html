@@ -502,9 +502,56 @@
       .learnements, .maintext, .firstbuttons, .middleelements{
         display: none;
       }
-      .bottomelements{
-          background: green;
+      .mobile-brand{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+      /*  display: inline-block;
+        margin-left: -5px;*/
+          color: #F270A8;
+        font-weight: 900;
+        font-size: 20vw;
+        position: relative;
+        bottom: -100px;
       }
+      .welcome{
+        padding: 0;
+        position: absolute;
+        background-size: auto;
+        width: 100%;
+          z-index: -1;
+          height: 180vw;
+      }
+      .bottomelements{
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        bottom: 0;
+        height: 160vw;
+      }
+      .leftelements{
+        width: 35%;
+      }
+      .frame{
+        width: 60%;
+        position: relative;
+        z-index: 1;
+      }
+      .frame img{
+        bottom: 50px;
+      /*  min-width: 450px;*/
+        width: 55vw;
+      }
+      .translogo{
+        width: 50%;
+      }
+      .translogo img{
+        width: 30vw;
+        position: absolute;
+        bottom: 60vw;
+        right: -1vw;
+      }
+
   }
     </style>
     <body>
