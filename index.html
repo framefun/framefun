@@ -26,6 +26,10 @@
       font-family: 'Lato', sans-serif;
       overflow-x: hidden;
       }
+      .closeBody{
+        overflow: hidden;
+        height: 100%;
+      }
 
 
 
@@ -539,13 +543,13 @@ vh      }
       }
       .translogo{
         width: 50%;
+        overflow: hidden;
       }
       .translogo img{
         width: 30vw;
         position: absolute;
         bottom: 60vw;
         right: -1vw;
-        display: none;
       }
 
   }
@@ -669,6 +673,7 @@ vh      }
     $('.mobile-nav').on('click', () => {
       $('.bar1').toggleClass('closeMenu1');
       $('.bar2').toggleClass('closeMenu2');
+      $('body').toggleClass('closeBody');
       $('.mobile-menu').toggleClass('closeMenu', 300);
 
   /*
