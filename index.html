@@ -518,7 +518,7 @@ vh      }
         background-size: auto;
         width: 100%;
           z-index: -1;
-          height: 180vw;
+          height: 200vw;
       }
       .bottomelements{
         position: relative;
@@ -549,6 +549,50 @@ vh      }
         position: absolute;
         bottom: 60vw;
         right: -1vw;
+      }
+      .mobile-largetext{
+        color: white;
+        text-align: center;
+        font-size: 6vw;
+        margin-top: 5vw;
+        font-weight: 900;
+      }
+      .mfirstbuttons{
+        margin: 5vw 0 0 0;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .mfirstbuttons button{
+        font-size: 4vw;
+        width: 70vw;
+        padding: 2vw;
+        cursor: pointer;
+        color: var(--color);
+        transition: 0.25s;
+      }
+      #mgiftbtn{
+        background: none;
+        color: white;
+        border: 1px solid white;
+        --hover: white;
+      }
+      #mgiftbtn:hover, #mgiftbtn:focus{
+        opacity: 0.8;
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          transform: translateY(-0.25em);
+      }
+      #mrequestbtn:hover, #mrequestbtn:focus {
+       box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+       transform: translateY(-0.25em);
+       opacity: 0.8;
+      }
+      #mrequestbtn{
+        margin-top: 3vw;
+        margin-left: 0;
+        background: white;
+        color: #EC2B8B;
+        border: 1px solid white;
+        --hover: white;
       }
 
   }
@@ -660,7 +704,13 @@ vh      }
           </td>
         </tr>
       </table>
-
+      <div class="mobile-largetext">
+        WE MAKE YOUR BRAND <br> ROAR OUT LOUD!
+      </div><br>
+      <form class="mfirstbuttons" method="post">
+        <button id="mgiftbtn" type="button" name="mgiftbtn">GIFT SHOP</button>
+        <button id="mrequestbtn" type="button" name="mrequestbtn">REQUEST A SERVICE</button>
+      </form>
     </section>
     <section style="position: relative; top: 1020px">
 
